@@ -8,21 +8,21 @@ angular.module('tabs', ['ngRoute'])
                 .when('/', {templateUrl: 'partials/tab1.html',
                     controller: function ($scope) {
 
-                        $scope.setActive('to');
+                        $scope.setActive('tab1');
 
                     }})
 
-                .when('/bus', {template: '<div class="content"><h3>Content Tab2 {{ }}</h3></div>',
+                .when('/tab2', {template: '<div class="content"><h3>Content Tab2</h3></div>',
                     controller: function ($scope) {
 
-                        $scope.setActive('bus');
+                        $scope.setActive('tab2');
 
                     }})
 
-                .when('/reservations', {templateUrl: 'partials/tab3.html',
+                .when('/tab3', {templateUrl: 'partials/tab3.html',
                     controller: function ($scope) {
 
-                        $scope.setActive('reservations');
+                        $scope.setActive('tab3');
 
                     }});
 

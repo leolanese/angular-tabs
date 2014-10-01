@@ -1,11 +1,11 @@
-function AppCtrl ($scope) {
+var AppCtrl = function ($scope) {
 
   $scope.setActive = function (type) {
 
-    // null the
-    $scope.toActive = '';
-    $scope.busActive = '';
-    $scope.reservationsActive = '';
+    //remove class to ALL the active classes
+    $scope.tab1Active = '';
+    $scope.tab2Active = '';
+    $scope.tab3Active = '';
 
     console.log($scope)
 
