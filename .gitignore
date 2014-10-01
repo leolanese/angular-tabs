@@ -28,10 +28,12 @@ pickle-email-*.html
 
 npm-debug.log
 node_modules/
+data/
 /node_modules
 !/node_modules/
 !src/node_modules/
 node_modules/**/*
+data/**/*
 devportal/node_modules/
 devportal/node_modules/**/*
 
