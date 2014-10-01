@@ -21,8 +21,31 @@ cd angular-tabs
 ```
 
 
+# Install the node http-server server
+```
+npm -g install http-server
+```
 
-## Leo Lanese, I build websites, London, UK<br>
+Run this server 'ON THE PROJECT ROOT'
+```
+http-server
+```
+
+# Get the process that has bound to the required port
+```
+lsof -Pi | grep LISTEN
+```
+
+// node      18740  Leo   12u  IPv4 0xaf78c883a32c84bf      0t0  TCP *:8081 (LISTEN)
+
+
+# kill process
+```
+kill -9 18740
+```
+
+
+## Leo Lanese, I Build Smart Solutions, London, UK<br>
 
 
 # My Portfolio<br>
@@ -41,4 +64,4 @@ cd angular-tabs
 <a href="http://twitter.com/LeoLaneseltd" target="_blank">http://twitter.com/LeoLaneseltd</a><br>
 
 # Questions / Suggestion?<br>
-<a href="mail:to">javscript@leolanese.com</a><br>
+<a href="mail:to">javascript@leolanese.com</a><br>
