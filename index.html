@@ -1,0 +1,38 @@
+<html ng-app="tabs">
+
+<head>
+
+	<title>Tabs Demo</title>
+
+	<link rel="stylesheet" type="text/css" href="http://getbootstrap.com/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+
+<body>
+	<div class="container-fluid" ng-controller="AppCtrl">
+		<h1>Simple Angular Tabs</h1>
+
+		<ul class="nav nav-pills row">
+			<li class="col-xs-6 col-md-3" ng-class="destinationsActive">
+				<a href="#">Tab1</a>
+			</li>
+			<li class="col-xs-6 col-md-3" ng-class="busActive">
+				<a href="#/flights">Tab2</a>
+			</li>
+			<li class="col-xs-6 col-md-3"  ng-class="reservationsActive">
+				<a href="#/reservations">Tab3</a>
+			</li>
+		</ul>
+
+		<div ng-view></div>
+	</div>
+</body>
+
+<script  type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.js"></script>
+<script  type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-route.js"></script>
+
+<script src="js/controllers/app.js"></script>
+<script src="js/routes.js"></script>
+
+</html>

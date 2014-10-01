@@ -1,0 +1,12 @@
+<div ng-show="me">
+
+  <h3>from {{me.name}}</h3>
+
+  <h4>To:</h4>
+
+  <ul>
+    <li ng-repeat="to in me.tos">
+      {{ to }}
+    </li>
+  </ul>
+</div>

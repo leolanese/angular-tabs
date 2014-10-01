@@ -1,0 +1,10 @@
+<div class="content">
+	<h3>Content Tab1</h3>
+	<ul>
+		<li ng-repeat="station in stations">
+			<a href="" ng-click="setStation(station.id)">{{station.id}} - {{station.city}}</a>
+		</li>
+	</ul>
+
+</div>
+<div class="span5" ng-include src="sidebarURL"></div>
