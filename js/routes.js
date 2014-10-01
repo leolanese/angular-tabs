@@ -17,7 +17,7 @@ AppCtrl.config(function airlineRouter($routeProvider) {
                 '<div class="content"><h3>Content Tab2 {{ stations | json }}</h3></div>',
             controller: function ($scope) {
 
-                $scope.setActive('tab2/');
+                $scope.setActive('tab2');
 
             }})
 
