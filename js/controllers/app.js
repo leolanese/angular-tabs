@@ -1,7 +1,7 @@
 'use strict';
 
+// we are defining your app now
 var AppCtrl = angular.module('tabs', ['ngRoute'])
-
 
 AppCtrl.controller('AppCtrl', function ($scope) {
 
