@@ -45,5 +45,6 @@ bower_components
 
 .DS_Store
 .idea/**/*
+.idea
 php/**.*.idea
 
