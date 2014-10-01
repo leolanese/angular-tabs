@@ -1,11 +1,17 @@
 function AppCtrl ($scope) {
 
   $scope.setActive = function (type) {
-    $scope.destinationsActive = '';
+
+    // null the
+    $scope.toActive = '';
     $scope.busActive = '';
     $scope.reservationsActive = '';
 
+    console.log($scope)
+
+    // adding the active class
     $scope[type + 'Active'] = 'active';
+
   }
 
   $scope.stations = {
@@ -13,7 +19,7 @@ function AppCtrl ($scope) {
       "id": "BIS",
       "name": "Bishop Stortford",
       "city": "Essex",
-      "tos": [
+      "to": [
         "Cambridge",
         "London"
       ]
@@ -22,7 +28,7 @@ function AppCtrl ($scope) {
       "id": "LTD",
       "name": "Liverpool Street",
       "city": "London",
-      "tos": [
+      "to": [
         "Cambridge",
         "Bishop Stortford"
       ]

@@ -7,17 +7,23 @@ angular.module('tabs', ['ngRoute'])
                 // when('path:name', route);
                 .when('/', {templateUrl: 'partials/tab1.html',
                     controller: function ($scope) {
+
                         $scope.setActive('to');
+
                     }})
 
-                .when('/flights', {template: '<div class="content"><h3>Content Tab2</h3></div>',
+                .when('/bus', {template: '<div class="content"><h3>Content Tab2 {{ }}</h3></div>',
                     controller: function ($scope) {
-                        $scope.setActive('flights');
+
+                        $scope.setActive('bus');
+
                     }})
 
                 .when('/reservations', {templateUrl: 'partials/tab3.html',
                     controller: function ($scope) {
+
                         $scope.setActive('reservations');
+
                     }});
 
         }
