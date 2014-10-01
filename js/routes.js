@@ -12,7 +12,7 @@ angular.module('tabs', ['ngRoute'])
 
                     }})
 
-                .when('/tab2', {template: '<div class="content"><h3>Content Tab2</h3></div>',
+                .when('/tab2', {template: '<div class="content"><h3>Content Tab2 {{ stations | json }}</h3></div>',
                     controller: function ($scope) {
 
                         $scope.setActive('tab2');

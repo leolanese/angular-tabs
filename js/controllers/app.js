@@ -1,45 +1,47 @@
 var AppCtrl = function ($scope) {
 
-  $scope.setActive = function (type) {
+    // using nesting variable scopes: self container elements
+    $scope.stations = {
+        "BIS": {
+            "id": "BIS",
+            "name": "Bishop Stortford",
+            "city": "Essex",
+            "to": [
+                "Cambridge",
+                "London"
+            ]
+        },
+        "LTD": {
+            "id": "LTD",
+            "name": "Liverpool Street",
+            "city": "London",
+            "to": [
+                "Cambridge",
+                "Bishop Stortford"
+            ]
+        }
+    };
 
-    //remove class to ALL the active classes
-    $scope.tab1Active = '';
-    $scope.tab2Active = '';
-    $scope.tab3Active = '';
+    $scope.setActive = function (type) {
 
-    console.log($scope)
+        //remove class to ALL the active classes
+        $scope.tab1Active = '';
+        $scope.tab2Active = '';
+        $scope.tab3Active = '';
 
-    // adding the active class
-    $scope[type + 'Active'] = 'active';
+        console.log($scope)
 
-  }
+        // adding the active class
+        $scope[type + 'Active'] = 'active';
 
-  $scope.stations = {
-    "BIS": {
-      "id": "BIS",
-      "name": "Bishop Stortford",
-      "city": "Essex",
-      "to": [
-        "Cambridge",
-        "London"
-      ]
-    },
-    "LTD": {
-      "id": "LTD",
-      "name": "Liverpool Street",
-      "city": "London",
-      "to": [
-        "Cambridge",
-        "Bishop Stortford"
-      ]
-    }
-  };
+    };
 
-  $scope.sidebarURL = 'partials/tab1_1.html';
-  $scope.me = null;
 
-  $scope.setStation = function (id) {
-    $scope.me = $scope.stations[id];
-  };
+    $scope.sidebarURL = 'partials/tab1_1.html';
+    $scope.me = null;
+
+    $scope.setStation = function (id) {
+        $scope.me = $scope.stations[id];
+    };
 
 }
