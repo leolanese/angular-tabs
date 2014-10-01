@@ -1,31 +1,32 @@
-angular.module('tabs', ['ngRoute'])
 
-	.config(function airlineRouter($routeProvider) {
+AppCtrl.config(function airlineRouter($routeProvider) {
 
-            $routeProvider
+    $routeProvider
 
-                // when('path:name', route);
-                .when('/', {templateUrl: 'partials/tab1.html',
-                    controller: function ($scope) {
+        // when('path:name', route);
+        .when('/', {
+            templateUrl: 'partials/tab1.html',
+            controller: function ($scope) {
 
-                        $scope.setActive('tab1');
+                $scope.setActive('tab1');
 
-                    }})
+            }})
 
-                .when('/tab2', {template: '<div class="content"><h3>Content Tab2 {{ stations | json }}</h3></div>',
-                    controller: function ($scope) {
+        .when('/tab2', {
+            template:
+                '<div class="content"><h3>Content Tab2 {{ stations | json }}</h3></div>',
+            controller: function ($scope) {
 
-                        $scope.setActive('tab2');
+                $scope.setActive('tab2/');
 
-                    }})
+            }})
 
-                .when('/tab3', {templateUrl: 'partials/tab3.html',
-                    controller: function ($scope) {
+        .when('/tab3', {
+            templateUrl: 'partials/tab3.html',
+            controller: function ($scope) {
 
-                        $scope.setActive('tab3');
+                $scope.setActive('tab3');
 
-                    }});
+            }});
 
-        }
-
-);
+});

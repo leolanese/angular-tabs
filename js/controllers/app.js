@@ -1,4 +1,9 @@
-var AppCtrl = function ($scope) {
+'use strict';
+
+var AppCtrl = angular.module('tabs', ['ngRoute'])
+
+
+AppCtrl.controller('AppCtrl', function ($scope) {
 
     // using nesting variable scopes: self container elements
     $scope.stations = {
@@ -24,7 +29,7 @@ var AppCtrl = function ($scope) {
 
     $scope.setActive = function (type) {
 
-        //remove class to ALL the active classes
+        // RESET class to ALL the active classes
         $scope.tab1Active = '';
         $scope.tab2Active = '';
         $scope.tab3Active = '';
@@ -44,4 +49,5 @@ var AppCtrl = function ($scope) {
         $scope.me = $scope.stations[id];
     };
 
-}
+
+});
