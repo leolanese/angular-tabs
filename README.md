@@ -1,9 +1,7 @@
 ## Angular-tabs 
 
-
-# What is this?
 This is a simple boilerplate clickable tab. 
-Kick-start your module with using Routes with Bootstrap.
+To help you to kick-start your module with using ng-route and Bootstrap CSS.
 
 
 # What I'm using:
@@ -45,6 +43,8 @@ kill -9 18740
 ```
 
 
+--
+
 ## Leo Lanese, I Build Smart Solutions, London, UK<br>
 
 
@@ -63,5 +63,5 @@ kill -9 18740
 # Twitter:<br>
 <a href="http://twitter.com/LeoLaneseltd" target="_blank">http://twitter.com/LeoLaneseltd</a><br>
 
-# Questions / Suggestion?<br>
+# Questions / Suggestion / Recommendation ?<br>
 <a href="mail:to">javascript@leolanese.com</a><br>
