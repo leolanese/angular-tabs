@@ -3,6 +3,8 @@
 This is a simple boilerplate clickable tab. 
 To help you to kick-start your module with using ng-route and Bootstrap CSS.
 
+## DEMO:
+<a href="http://leolanese.com/angular-tabs/#/">angular-tabs demo</a>
 
 # What I'm using:
 Using AngularJS (1.2.0), ng-routes (1.2.0), bootstrap CSS (3.2.0).
